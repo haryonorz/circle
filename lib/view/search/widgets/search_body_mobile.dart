@@ -4,14 +4,14 @@ import 'package:circle/component/small_trip_card.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyMobile extends StatefulWidget {
-  const BodyMobile({Key? key}) : super(key: key);
+class SearchBodyMobile extends StatefulWidget {
+  const SearchBodyMobile({Key? key}) : super(key: key);
 
   @override
-  State<BodyMobile> createState() => _BodyMobileState();
+  State<SearchBodyMobile> createState() => _SearchBodyMobileState();
 }
 
-class _BodyMobileState extends State<BodyMobile> {
+class _SearchBodyMobileState extends State<SearchBodyMobile> {
   List<Trip> searchResult = [];
 
   @override

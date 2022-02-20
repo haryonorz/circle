@@ -2,24 +2,24 @@ import 'package:circle/model/constants.dart';
 import 'package:circle/component/map.dart';
 import 'package:circle/model/trip.dart';
 import 'package:circle/view/detail/trip/widgets/photo_gallery.dart';
-import 'package:circle/view/detail/widgets/body_panel.dart';
+import 'package:circle/view/detail/widgets/detail_body_panel.dart';
 import 'package:circle/view/detail/widgets/panel.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-class BodyMobile extends StatefulWidget {
+class TripBodyMobile extends StatefulWidget {
   final Trip trip;
 
-  const BodyMobile({
+  const TripBodyMobile({
     required this.trip,
     Key? key,
   }) : super(key: key);
 
   @override
-  State<BodyMobile> createState() => _BodyMobileState();
+  State<TripBodyMobile> createState() => _TripBodyMobileState();
 }
 
-class _BodyMobileState extends State<BodyMobile> {
+class _TripBodyMobileState extends State<TripBodyMobile> {
   @override
   Widget build(BuildContext context) {
     var favorite = widget.trip.favorite;
@@ -37,7 +37,7 @@ class _BodyMobileState extends State<BodyMobile> {
             topLeft: Radius.circular(18.0),
             topRight: Radius.circular(18.0),
           ),
-          body: BodyPanel(
+          body: DetailBodyPanel(
             photoCover: widget.trip.photoCover,
             height: size.height - (size.height / 1.6),
           ),

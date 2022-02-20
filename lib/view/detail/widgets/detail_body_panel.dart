@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BodyPanel extends StatelessWidget {
+class DetailBodyPanel extends StatelessWidget {
   final String photoCover;
   final double height;
 
-  const BodyPanel({
+  const DetailBodyPanel({
     required this.photoCover,
     required this.height,
     Key? key,

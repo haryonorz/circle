@@ -1,6 +1,6 @@
 import 'package:circle/model/trip.dart';
-import 'package:circle/view/detail/trip/widgets/body_mobile.dart';
-import 'package:circle/view/detail/trip/widgets/body_web.dart';
+import 'package:circle/view/detail/trip/widgets/trip_body_mobile.dart';
+import 'package:circle/view/detail/trip/widgets/trip_body_web.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -25,8 +25,8 @@ class _DetailTripScreenState extends State<DetailTripScreen> {
         body: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? BodyMobile(trip: widget.trip)
-            : BodyWeb(trip: widget.trip),
+            ? TripBodyMobile(trip: widget.trip)
+            : TripBodyWeb(trip: widget.trip),
       );
     });
   }

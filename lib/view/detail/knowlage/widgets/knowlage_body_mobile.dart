@@ -2,24 +2,24 @@ import 'package:circle/component/item_photo.dart';
 import 'package:circle/model/constants.dart';
 import 'package:circle/component/map.dart';
 import 'package:circle/model/knowlage_city.dart';
-import 'package:circle/view/detail/widgets/body_panel.dart';
+import 'package:circle/view/detail/widgets/detail_body_panel.dart';
 import 'package:circle/view/detail/widgets/panel.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-class BodyMobile extends StatefulWidget {
+class KnowlageBodyMobile extends StatefulWidget {
   final KnowlageCity knowlageCity;
 
-  const BodyMobile({
+  const KnowlageBodyMobile({
     required this.knowlageCity,
     Key? key,
   }) : super(key: key);
 
   @override
-  _BodyMobileState createState() => _BodyMobileState();
+  _KnowlageBodyMobileState createState() => _KnowlageBodyMobileState();
 }
 
-class _BodyMobileState extends State<BodyMobile> {
+class _KnowlageBodyMobileState extends State<KnowlageBodyMobile> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -36,7 +36,7 @@ class _BodyMobileState extends State<BodyMobile> {
             topLeft: Radius.circular(18.0),
             topRight: Radius.circular(18.0),
           ),
-          body: BodyPanel(
+          body: DetailBodyPanel(
             photoCover: widget.knowlageCity.photoCover,
             height: size.height - (size.height / 1.6),
           ),

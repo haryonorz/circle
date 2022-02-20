@@ -4,10 +4,10 @@ import 'package:circle/model/constants.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyWeb extends StatelessWidget {
+class FavoriteBodyWeb extends StatelessWidget {
   final List<Trip> favoriteTrip;
 
-  const BodyWeb({
+  const FavoriteBodyWeb({
     required this.favoriteTrip,
     Key? key,
   }) : super(key: key);

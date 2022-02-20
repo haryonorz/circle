@@ -1,8 +1,8 @@
 import 'package:circle/component/custom_appbar.dart';
 import 'package:circle/model/constants.dart';
 import 'package:circle/view/favorite/favorite_screen.dart';
-import 'package:circle/view/home/widgets/body_mobile.dart';
-import 'package:circle/view/home/widgets/body_web.dart';
+import 'package:circle/view/home/widgets/home_body_mobile.dart';
+import 'package:circle/view/home/widgets/home_body_web.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? customAppBar(
+            ? CustomAppBar(
                 leading: Container(),
                 flexibleSpace: SafeArea(
                   child: Column(
@@ -73,8 +73,8 @@ class _HomeScreenState extends State<HomeScreen> {
         body: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? const BodyMobile()
-            : const BodyWeb(),
+            ? const HomeBodyMobile()
+            : const HomeBodyWeb(),
       );
     });
   }

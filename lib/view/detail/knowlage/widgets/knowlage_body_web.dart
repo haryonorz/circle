@@ -3,19 +3,19 @@ import 'package:circle/component/map.dart';
 import 'package:circle/model/knowlage_city.dart';
 import 'package:flutter/material.dart';
 
-class BodyWeb extends StatefulWidget {
+class KnowlageBodyWeb extends StatefulWidget {
   final KnowlageCity knowlageCity;
 
-  const BodyWeb({
+  const KnowlageBodyWeb({
     required this.knowlageCity,
     Key? key,
   }) : super(key: key);
 
   @override
-  _BodyWebState createState() => _BodyWebState();
+  _KnowlageBodyWebState createState() => _KnowlageBodyWebState();
 }
 
-class _BodyWebState extends State<BodyWeb> {
+class _KnowlageBodyWebState extends State<KnowlageBodyWeb> {
   final _scrollController = ScrollController();
 
   @override

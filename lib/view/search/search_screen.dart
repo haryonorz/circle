@@ -1,7 +1,7 @@
 import 'package:circle/component/custom_appbar.dart';
 import 'package:circle/model/constants.dart';
-import 'package:circle/view/search/widgets/body_mobile.dart';
-import 'package:circle/view/search/widgets/body_web.dart';
+import 'package:circle/view/search/widgets/search_body_mobile.dart';
+import 'package:circle/view/search/widgets/search_body_web.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class _SearchScreenState extends State<SearchScreen> {
         appBar: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? customAppBar(
+            ? CustomAppBar(
                 title: const Text(
                   'Search Trip',
                   style: TextStyle(color: black),
@@ -40,8 +40,8 @@ class _SearchScreenState extends State<SearchScreen> {
         body: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? const BodyMobile()
-            : const BodyWeb(),
+            ? const SearchBodyMobile()
+            : const SearchBodyWeb(),
       );
     });
   }

@@ -5,14 +5,14 @@ import 'package:circle/model/constants.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyWeb extends StatefulWidget {
-  const BodyWeb({Key? key}) : super(key: key);
+class SearchBodyWeb extends StatefulWidget {
+  const SearchBodyWeb({Key? key}) : super(key: key);
 
   @override
-  State<BodyWeb> createState() => _BodyWebState();
+  State<SearchBodyWeb> createState() => _SearchBodyWebState();
 }
 
-class _BodyWebState extends State<BodyWeb> {
+class _SearchBodyWebState extends State<SearchBodyWeb> {
   List<Trip> searchResult = [];
 
   @override

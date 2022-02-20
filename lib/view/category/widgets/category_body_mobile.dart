@@ -3,11 +3,11 @@ import 'package:circle/component/small_trip_card.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyMobile extends StatelessWidget {
-  final List<Trip> favoriteTrip;
+class CategoryBodyMobile extends StatelessWidget {
+  final List<Trip> categoryTrip;
 
-  const BodyMobile({
-    required this.favoriteTrip,
+  const CategoryBodyMobile({
+    required this.categoryTrip,
     Key? key,
   }) : super(key: key);
 
@@ -15,13 +15,13 @@ class BodyMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: favoriteTrip.isEmpty
+      child: categoryTrip.isEmpty
           ? const NoData()
           : GridView.count(
               crossAxisCount: 2,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              children: favoriteTrip
+              children: categoryTrip
                   .map((trip) => SmallTripCard(trip: trip))
                   .toList(),
             ),

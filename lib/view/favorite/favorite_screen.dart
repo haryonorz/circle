@@ -1,8 +1,8 @@
 import 'package:circle/component/custom_appbar.dart';
 import 'package:circle/model/constants.dart';
 import 'package:circle/model/trip.dart';
-import 'package:circle/view/favorite/widgets/body_mobile.dart';
-import 'package:circle/view/favorite/widgets/body_web.dart';
+import 'package:circle/view/favorite/widgets/favorite_body_mobile.dart';
+import 'package:circle/view/favorite/widgets/favorite_body_web.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +25,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
         appBar: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? customAppBar(
+            ? CustomAppBar(
                 title: const Text(
                   'Favorite',
                   style: TextStyle(color: black),
@@ -44,10 +44,8 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
         body: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? BodyMobile(favoriteTrip: favoriteTrip)
-            : BodyWeb(
-                favoriteTrip: favoriteTrip,
-              ),
+            ? FavoriteBodyMobile(favoriteTrip: favoriteTrip)
+            : FavoriteBodyWeb(favoriteTrip: favoriteTrip),
       );
     });
   }

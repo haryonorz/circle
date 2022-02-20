@@ -1,6 +1,6 @@
 import 'package:circle/model/knowlage_city.dart';
-import 'package:circle/view/detail/knowlage/widgets/body_mobile.dart';
-import 'package:circle/view/detail/knowlage/widgets/body_web.dart';
+import 'package:circle/view/detail/knowlage/widgets/knowlage_body_mobile.dart';
+import 'package:circle/view/detail/knowlage/widgets/knowlage_body_web.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -25,8 +25,8 @@ class _DetailKnowlageScreenState extends State<DetailKnowlageScreen> {
         body: ((defaultTargetPlatform == TargetPlatform.android ||
                     defaultTargetPlatform == TargetPlatform.iOS) ||
                 (constraints.maxWidth <= 600))
-            ? BodyMobile(knowlageCity: widget.knowlageCity)
-            : BodyWeb(knowlageCity: widget.knowlageCity),
+            ? KnowlageBodyMobile(knowlageCity: widget.knowlageCity)
+            : KnowlageBodyWeb(knowlageCity: widget.knowlageCity),
       );
     });
   }

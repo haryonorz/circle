@@ -4,11 +4,11 @@ import 'package:circle/model/constants.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyWeb extends StatelessWidget {
+class CategoryBodyWeb extends StatelessWidget {
   final String category;
   final List<Trip> categoryTrip;
 
-  const BodyWeb({
+  const CategoryBodyWeb({
     required this.category,
     required this.categoryTrip,
     Key? key,

@@ -5,8 +5,8 @@ import 'package:circle/view/home/widgets/posting_knowlage.dart';
 import 'package:circle/view/search/search_screen.dart';
 import 'package:flutter/material.dart';
 
-class BodyMobile extends StatelessWidget {
-  const BodyMobile({Key? key}) : super(key: key);
+class HomeBodyMobile extends StatelessWidget {
+  const HomeBodyMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

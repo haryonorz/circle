@@ -3,19 +3,19 @@ import 'package:circle/component/map.dart';
 import 'package:circle/model/trip.dart';
 import 'package:flutter/material.dart';
 
-class BodyWeb extends StatefulWidget {
+class TripBodyWeb extends StatefulWidget {
   final Trip trip;
 
-  const BodyWeb({
+  const TripBodyWeb({
     required this.trip,
     Key? key,
   }) : super(key: key);
 
   @override
-  _BodyWebState createState() => _BodyWebState();
+  _TripBodyWebState createState() => _TripBodyWebState();
 }
 
-class _BodyWebState extends State<BodyWeb> {
+class _TripBodyWebState extends State<TripBodyWeb> {
   final _scrollController = ScrollController();
 
   @override

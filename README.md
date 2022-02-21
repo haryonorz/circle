@@ -1,17 +1,42 @@
-# circle
+<h1 align="center">
+  Circle Travel
+</h1>
+<p align="center">
+  Submission Beginner Flutter in Dicoding Course : Trip Travel App.
+</p>
+<p align="center">
+  <a href="http://developer.android.com/index.html"><img alt="Platform" src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-green.svg"></a>
+  <a href="http://kotlinlang.org"><img alt="Flutter" src="https://img.shields.io/badge/flutter-2.10.1-blue.svg"></a>
+  <a href="https://github.com/haryonorz/MOV/"><img alt="Fork" src="https://img.shields.io/github/forks/haryonorz/circle"></a>
+  <a href="https://github.com/haryonorz/MOV/"><img alt="Star" src="https://img.shields.io/github/stars/haryonorz/circle"></a>
+  <a href="https://github.com/haryonorz/MOV/"><img alt="Watch" src="https://img.shields.io/github/watchers/haryonorz/circle"></a>
+</p>
 
-A new Flutter project.
+<p align="center">
+  <img src="assets/thumbnail.png"/>
+</p>
 
-## Getting Started
+## Mobile Preview
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="assets/preview.gif"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Website Preview
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Preview [Click here](https://pub.dev/packages/sliding_up_panel)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-#circle
+## Features
+
+- Get All Trip Package
+- Favorited Trip
+- Post About Places in the World
+
+## Package
+
+- [Sliding Up Panel](https://pub.dev/packages/sliding_up_panel)
+- [Flutter Map](https://pub.dev/packages/flutter_map)
+
+## Credits
+
+Design by [Jit Banik](<https://www.figma.com/community/file/1045052826187963976/Circle---Tour-and-Travel-App-(Community)>)

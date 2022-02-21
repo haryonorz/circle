@@ -24,7 +24,7 @@
 
 ## Website Preview
 
-Preview [Click here](https://pub.dev/packages/sliding_up_panel)
+Preview [Click here](https://haryonorz.github.io/circle/#/)
 
 ## Features
 
